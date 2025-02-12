@@ -15,6 +15,7 @@ useHead({
 		{ name: 'twitter:site', content: '@nuxt_js' },
 		{ name: 'twitter:creator', content: '@nuxt_js' },
 	],
+	script: [{ src: '//pl25850081.effectiveratecpm.com/98/80/fe/9880fec66b9440fa2d20d123f6d835fd.js', type: 'text/javascript' }],
 	link: [
 		{
 			rel: 'icon',
