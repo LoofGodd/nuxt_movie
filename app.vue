@@ -9,11 +9,13 @@ useHead({
 	title: 'The Movies',
 	titleTemplate: title => title !== 'The Movies' ? `${title} · The Movies` : title,
 	meta: [
-		{ name: 'description', content: 'A TMDB client built with Nuxt Image to show the potential of it ✨' },
-		{ property: 'og:image', content: 'https://movies.nuxt.space/social-card.png' },
+		{
+			name: 'description', content: 'Discover the ultimate destination for movie lovers—featuring expert reviews, exclusive trailers, and the latest film news. Explore blockbuster hits, indie gems, and timeless classics, all in one place!" This description blends relevant keywords (movie reviews, film news, trailers, blockbuster, indie) with a clear value proposition that entices visitors and search engines alike. Adjust any details to match your site\'s unique focus or tone'
+		},
+		{ property: 'og:image', content: 'https://static.vecteezy.com/system/resources/thumbnails/005/502/524/small_2x/cinema-background-concept-movie-theater-object-on-red-curtain-background-and-movie-time-with-electric-bulbs-frame-illustration-free-vector.jpg' },
 		{ name: 'twitter:card', content: 'summary_large_image' },
-		{ name: 'twitter:site', content: '@nuxt_js' },
-		{ name: 'twitter:creator', content: '@nuxt_js' },
+		{ name: 'twitter:site', content: '@Loof_Godd' },
+		{ name: 'twitter:creator', content: '@Loof_Godd' },
 	],
 	script: [{ src: '//pl25850081.effectiveratecpm.com/98/80/fe/9880fec66b9440fa2d20d123f6d835fd.js', type: 'text/javascript' }],
 	link: [
