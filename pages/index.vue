@@ -28,6 +28,6 @@ const AsyncWrapper = defineComponent({
 			</NuxtLink>
 		</AsyncWrapper>
 		<CarouselAutoQuery v-for="query of queries" :key="query.type + query.query" :query="query" />
-		<!-- <TheFooter /> -->
+		<TheFooter />
 	</div>
 </template>

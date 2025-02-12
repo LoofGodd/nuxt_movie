@@ -5,13 +5,14 @@ defineProps<{
 	item: Media
 }>()
 // Reactive state variables
-
+const { public: { fileMoon, vidPaly, myCould } } = useRuntimeConfig()
+console.log({ fileMoon })
 const servers = [
-	{ name: "MyCloud", url: "https://embed.su/embed/movie/" },
-	{ name: "VidPlay", url: "https://vidsrc.net/embed/movie/" },
+	{ name: "MyCloud", url: `${myCould}/movie/` },
+	{ name: "VidPlay", url: `${vidPaly}/movie/` },
 	{
 		name: "Filemoon",
-		url: "https://multiembed.mov/directstream.php?tmdb=1&video_id=",
+		url: fileMoon,
 	},
 ]
 const selectedServer = ref(servers[0])

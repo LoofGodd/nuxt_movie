@@ -40,6 +40,6 @@ useHead({
 			</template>
 			<MediaCard v-for="i of recommendations.results" :key="i.id" :item="i" :type="type" flex-1 w-40 md:w-60 />
 		</CarouselBase>
-		<!-- <TheFooter /> -->
+		<TheFooter />
 	</div>
 </template>

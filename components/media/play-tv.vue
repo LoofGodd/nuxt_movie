@@ -6,12 +6,14 @@ const props = defineProps<{
 }>()
 // Reactive state variables
 
+const { public: { vidSrc, vidPaly, myCould } } = useRuntimeConfig()
+
 const servers = [
-	{ name: "VidPlay", url: "https://vidsrc.net/embed/tv/" },
-	{ name: "MyCloud", url: "https://embed.su/embed/tv/" },
+	{ name: "MyCloud", url: `${myCould}/tv/` },
+	{ name: "VidPlay", url: `${vidPaly}/tv/` },
 	{
 		name: "Filemoon",
-		url: "https://vidsrc.pm/embed/tv/",
+		url: vidSrc,
 	},
 ]
 const selectedServer = ref(servers[0])

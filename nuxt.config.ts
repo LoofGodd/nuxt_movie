@@ -1,4 +1,5 @@
 import process from 'node:process'
+import 'dotenv/config'
 
 const isDev = process.env.NODE_ENV === 'development'
 
@@ -24,7 +25,12 @@ export default defineNuxtConfig({
 	runtimeConfig: {
 		public: {
 			apiBaseUrl,
+			vidPaly: process.env.VIDPLAY,
+			myCould: process.env.MYCLOUD,
+			fileMoon: process.env.FILEMOON_MOVIE,
+			vidSrc: process.env.VIDSRC
 		},
+
 	},
 	devtools: {
 		enabled: true,
