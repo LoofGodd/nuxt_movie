@@ -17,7 +17,32 @@ useHead({
 		{ name: 'twitter:site', content: '@Loof_Godd' },
 		{ name: 'twitter:creator', content: '@Loof_Godd' },
 	],
-	script: [{ src: '//pl25850081.effectiveratecpm.com/98/80/fe/9880fec66b9440fa2d20d123f6d835fd.js', type: 'text/javascript' }],
+	script: [
+		{
+			async: "async",
+			src: "//damagedbehaved.com/5ffd86ece8a81dfe2abd976a15399685/invoke.js",
+			"data-cfasync": "false"
+		},
+		{ type: "text/javascript", src: "//damagedbehaved.com/698a0f736498013490576e244d18b278/invoke.js", body: true },
+		{
+			hid: 'custom-inline-script',
+			innerHTML: `
+          atOptions = {
+            'key': '698a0f736498013490576e244d18b278',
+            'format': 'iframe',
+            'height': 90,
+            'width': 728,
+            'params': {}
+          };
+        `,
+			type: 'text/javascript',
+			charset: 'utf-8',
+			body: true
+		},
+	],
+	__dangerouslyDisableSanitizersByTagID: {
+		'custom-inline-script': ['innerHTML']
+	},
 	link: [
 		{
 			rel: 'icon',
@@ -28,16 +53,20 @@ useHead({
 })
 </script>
 
+
 <template>
 	<NuxtLoadingIndicator />
 	<div h-full w-full font-sans grid="~ lt-lg:rows-[1fr_max-content] lg:cols-[max-content_1fr]" of-hidden
 		view-transition-app transition duration-0>
 		<div id="app-scroller" of-x-hidden of-y-auto relative>
+			<div id="container-5ffd86ece8a81dfe2abd976a15399685"></div>
 			<NuxtPage />
 		</div>
+
 		<NavBar lg:order-first />
 		<IframeModal />
 		<PhotoModal />
+
 	</div>
 </template>
 

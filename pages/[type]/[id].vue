@@ -25,6 +25,12 @@ useHead({
 		{ name: 'description', content: item.overview },
 		{ property: 'og:image', content: $img(`/tmdb${item.poster_path}`, { width: 1200, height: 630 }) },
 	],
+	script: [
+		{
+			type: 'text/javascript',
+			src: '//damagedbehaved.com/98/80/fe/9880fec66b9440fa2d20d123f6d835fd.js'
+		}
+	]
 })
 </script>
 
